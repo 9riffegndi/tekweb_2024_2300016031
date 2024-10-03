@@ -16,7 +16,6 @@
     <!-- font -->
 
     <!-- INPUT, BTN, TEXT AREA scrll-->
-
     <style>
       html {
         scroll-behavior: smooth;
@@ -46,6 +45,7 @@
     <nav
       style="
         display: flex;
+        /* background-color: red; */
         justify-items: center;
         align-items: center;
         width: 100%;
@@ -55,6 +55,7 @@
         style="
           width: 100%;
           /* background-color: red; */
+          box-shadow: rgb(226, 225, 225) 1px 10px 40px 0px;
           display: flex;
           justify-content: center;
         "
@@ -62,7 +63,7 @@
         <ul
           style="
             /* background-color: aqua; */
-            box-shadow: rgb(226, 225, 225) 1px 10px 40px 0px;
+            flex-wrap: wrap;
             display: flex;
             justify-content: center;
             width: 35%;
@@ -99,43 +100,39 @@
     <!-- PROFILE -->
     <section
       style="
-        width: 100%;
+        margin: 10px;
+        gap: 20px;
+        /* background-color: red; */
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;
-        margin-top: 20px;
+        flex-wrap: wrap;
       "
     >
-      <div style="width: 40%">
-        <h1
-          style="
-            filter: drop-shadow(-120px 0px 110px rgb(0, 238, 255));
-            font-size: 4rem;
-            font-weight: 450;
-          "
-        >
+      <img
+        style="
+          /* box-shadow: #8af2f48f 122px 120px 250px 120px; */
+          border-radius: 40px;
+          width: 300px;
+        "
+        src="./img/Profile.jpg"
+      />
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          text-align: center;
+        "
+      >
+        <h1 style="font-size: 2.1rem">
           Hello World,
-          <span style="color: rgb(9, 104, 144)">Welcome to My Personal Website</span>
+          <span style="color: #0081a8">Welcome To My Personal Website</span>
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum amet
-          eius sint. Et molestiae minima, atque doloribus exercitationem
-          voluptates nemo veniam impedit recusandae ullam accusantium, iusto
-          optio eum ea voluptatibus!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          voluptate quos amet facilis architasdasd.
         </p>
-      </div>
-      <div style="width: 320px">
-        <img
-          style="
-            box-shadow: #8af2f48f 122px 120px 250px 120px;
-            border-radius: 100px;
-            width: 100%;
-            object-fit: cover;
-          "
-          src="./img/Profile.jpg"
-          alt=""
-        />
       </div>
     </section>
     <!-- PROFILE -->
@@ -159,8 +156,24 @@
           width: 100%;
         "
       >
-        <div style="width: 50%; text-align: center">
-          <h1 style="font-size: 4rem; font-weight: 450">
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            width: 50%;
+            text-align: center;
+          "
+        >
+          <h1
+            style="
+              display: flex;
+              text-align: center;
+              font-size: 4rem;
+              font-weight: 450;
+            "
+          >
             My Personal Projects
           </h1>
           <p>
@@ -559,13 +572,18 @@ Message
         margin-top: 100px;
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        align-items: end;
+        /* background-color: #7de2fc; */
       "
     >
       <div
         style="
           width: 100%;
           display: flex;
+          /* background-color: #b9b6e5; */
+          flex-wrap: wrap;
           justify-content: center;
           /* box-shadow: #00b9ce61 1px 10px 420px 0px; */
         "
