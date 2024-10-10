@@ -7,6 +7,7 @@
 ## Preview Web
 <!-- TUGAS PRAKTIKUM 1  -->
 - Link =>:  [Praktikum 1](https://9riffegndi.github.io/tekweb_2024_2300016031/praktikum_1/)
+- link =>:  [Praktikum 2](https://9riffegndi.github.io/tekweb_2024_2300016031/praktikum_2/)
 <!-- TUGAS PRAKTIKUM 1  -->
 
 
