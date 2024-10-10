@@ -103,9 +103,10 @@ p {
 .projecttitle li {
   display: flex;
   align-items: center;
-  border-left: blue solid 2px;
+  border-left: blue solid 4px;
+  box-shadow: rgb(226, 226, 226) 0px 0px 50px 0px;
   height: 40px;
-  border-radius: 2px;
+  border-radius: 7px;
   margin-left: -40px;
   list-style: none;
 }
