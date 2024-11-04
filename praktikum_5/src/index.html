@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Remind Me</title>
+  <link rel="icon" type="img/svg" href="./icons/Logo.svg">
+  <!-- Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Poppins -->
+</head>
+<body>
+<!-- Navbar -->
+<nav  class=" shadow-sm p-5 w-full sticky top-0 z-0  bg-white flex justify-center items-center">
+    <div class=" w-full flex sm:justify-between md:justify-between lg:justify-between 2xl:justify-between  xl:justify-between justify-between">
+        <div class="flex w-max gap-10 ">
+            <div class="w-max flex items-center">
+                <img src="./icons/Logo.svg" alt="logo">
+                <a class=font-semibold href="./index.html">Remind<span class="text-primary">me</span></a>
+            </div>
+            <ul class="md:flex gap-5 items-center hidden ">
+                <li><a  class="font-semibold text-primary" href="./index.html">HOME</a></li>
+                <li><a class="hover:text-primary" href="#features">Features</a></li>
+                <li><a class="hover:text-primary" href="#aboutUs">About Us</a></li>
+            </ul>
+        </div>
+        <div class="flexw-max items-center gap-5">
+            <img onclick="hamburgerToggle()" class="md:hidden sm:flex p-2 rounded-md hover:bg-secondary border-2 border-primary" src="./icons/radix-icons_hamburger-menu@2x.svg" alt="hamburger menu">
+            <button class="hidden md:flex justify-center hover:bg-secondary transition-colors items-center w-[190px] p-3 border-2 border-solid text-primary border-primary rounded-full"><a href="#aboutUs">About App</a></button>
+        </div>
+    </div>
+</nav>
+<!-- items navbar mobile -->
+<ul id="itemsnavbarMobile" class="sticky top-20 z-20 rounded-b-3xl bg-white w-full min-h-72 shadow-md hidden  md:hidden lg:hidden xl:hidden 2xl:hidden 3xl:hidden items-start flex flex-col">
+    <li class="p-3 hover:bg-secondary hover:transition-colors w-full hover:text-primary "><a class=" font-semibold text-primary" href="./index.html">HOME</a></li>
+    <li class="p-3 hover:bg-secondary hover:transition-colors w-full hover:text-primary "><a href="#features">Features</a></li>
+    <li class="p-3 hover:bg-secondary hover:transition-colors w-full hover:text-primary "><a href="#aboutUs">About Us</a></li>
+    <li class="p-3 hover:bg-secondary hover:transition-colors w-full hover:text-primary "><a href="#testimonials">Testimonials</a></li>
+    <li class="p-3 w-full">
+        <button class="w-full rounded-full md:flex justify-center hover:bg-secondary transition-colors items-center p-3 border-2 border-solid text-primary border-primary"><a href="#aboutUs">About App</a></button>
+    </li>
+</ul>
+<!-- Navbar -->
+
+
+<!-- hero -->
+<section  id="aboutUs" class=" flex flex-wrap sm:justify-around md:justify-between lg:justify-between lg:items-center 2xl:justify-between 3xl:justify-center ">
+    <div class="sm:w-[340px] xl:w-[500px] p-5 flex gap-7 flex-col ">
+        <h1 class="w-[310px] text-5xl xss:text-[56px] xs:text-[35px] sm:text-3xl lg:text-[40px] lg:-tracking-tighter   xl:text-[45px] 2xl:text-[45px] font-semibold ">Manage Schedule and Task Easy</h1>
+        <p class=" sm:text-sm">Create and organize schedule and task deadline become better, easy manage and certainly no longer lagging behind schedule of activities and task</p>
+        <button id="download" class="xsss:w-[190px] xss:w-[200px] sm:w-[200px] lg:w-[250px] hover:bg-secondary hover:border-primary border-2 transition-colors hover:text-primary p-4 text-white bg-primary rounded-full">Download App</button>
+    </div>
+    <img class="sm:w-[300px] lg:w-[400px] bg-secondary xs:bg-transparent 3xl:bg-secondary 3xl:rounded-2xl" src="./img/Hero Image.svg" alt="">
+</section>
+<!-- hero -->
+
+<!-- intresting features  -->
+<section class="flex mt-[120px] sm:justify-center xsss:gap-10 p-3 flex-wrap items-center 2xl:justify-between 3xl:justify-center">
+    <div class=" w-[350px] sm:w-[140px] md:w-[200px] lg:w-[300px] xl:w-[350px] 2xl:w-[400px] flex flex-col gap-3 items-center xs:items-start">
+        <img class="w-[75px] p-5 rounded-full bg-secondary" src="./icons/uim_schedule.svg" alt="">
+        <h1 class="font-semibold ">Set a better deadline tasks</h1>
+        <p class="text-center xs:text-start">You can make your duty deadlines better and more orderly</p>
+    </div>
+
+    <div class=" w-[350px] sm:w-[140px] md:w-[200px] lg:w-[300px] xl:w-[350px] 2xl:w-[400px] flex flex-col gap-3 items-center xs:items-start">
+        <img class="w-[75px] p-5 rounded-full bg-secondary" src="./icons/uim_layer-group.svg" alt="">
+        <h1 class="font-semibold ">Manage the tasks so easily</h1>
+        <p class="text-center xs:text-start">You can manage the deadlines and the schedule becomes easy</p>
+    </div>
+    
+    <div class=" w-[350px] sm:w-[140px] md:w-[200px] lg:w-[300px] xl:w-[350px] 2xl:w-[400px] flex flex-col gap-3 items-center xs:items-start">
+        <img class="w-[75px] p-5 rounded-full bg-secondary" src="./icons/ri_notification-fill.svg" alt="">
+        <h1 class="font-semibold ">Wouldn’t miss notifications</h1>
+        <p class="text-center xs:text-start">Of course you will always get the tasks and schedule notifications</p>
+    </div>
+</section>
+<!-- intresting features  -->
+
+
+<!-- features task and schedule -->
+<section id="features" class=" sm:justify-between flex 3xl:justify-center mt-[120px] xl:justify-between  2xl:justify-between lg:justify-between xs:justify-center  gap-5  flex-wrap items-center">
+    <img class="sm:w-[300px] lg:w-[500px] bg-secondary xs:bg-transparent 3xl:bg-secondary 3xl:rounded-2xl" src="./img/ScheduleFeatures.svg" alt="task and schedule img">
+    <div class=" sm:w-[200px] md:w-[300px]  lg:w-[460px] 2xl:w-[600px] p-3 flex gap-7 flex-col w-[400px]">
+        <h1 class="text-4xl sm:text-sm md:text-2xl lg:text-4xl 2xl:text-5xl -tracking-tight font-semibold ">
+            Set up task and schedule with a best features
+        </h1>
+        <p class="sm:text-xs md:text-base lg:text-lg xl:text-2xl 2xl:text-3xl">
+            The best feature makes you better, with the latest technology to meet your needs. Of course, with such features as organizing schedules and leading assignments, it will make you easier, So get the application now !.
+        </p>
+    </div>
+</section>
+<!-- features task and schedule -->
+
+
+<!-- features notification -->
+<section id="notification" class=" sm:justify-between flex 3xl:justify-center mt-[120px] xl:justify-between  2xl:justify-between lg:justify-between sm:justify-center xs:justify-center  gap-5  flex-wrap items-center">
+    <div class="sm:w-[200px] md:w-[300px]  lg:w-[460px] 2xl:w-[600px] p-3 flex gap-7 flex-col w-[400px]">
+        <h1 class="text-4xl sm:text-sm md:text-2xl lg:text-4xl 2xl:text-5xl -tracking-tight font-semibold ">
+            Set up task and schedule with a best features
+        </h1>
+        <p class="sm:text-xs md:text-base lg:text-lg xl:text-2xl 2xl:text-3xl">
+            The best feature makes you better, with the latest technology to meet your needs. Of course, with such features as organizing schedules and leading assignments, it will make you easier, So get the application now !.
+        </p>
+    </div>
+    <img class="sm:w-[300px] lg:w-[500px] bg-secondary xs:bg-transparent 3xl:bg-secondary 3xl:rounded-2xl" src="./img/NotificationFeatures.svg" alt="task and schedule img">
+</section>
+
+
+<!-- features notification -->
+
+<!-- download App -->
+<section id="download" class="flex mt-[30px] justify-center flex-wrap items-center p-4">
+    <div style="background-image: url(./img/Download\ App.svg);" class=" w-full bg-primary 3xl:w-max min-h-96 p-6 gap-10 flex flex-col justify-center items-center rounded-[45px]">
+        <h1 class="text-[18px] xs:text-3xl w-[65%]  text-white font-semibold text-center">Download an app now and the various benefits you will get immediately</h1>
+        <div class="flex gap-6 justify-center items-center flex-wrap">
+        <button id="download2" class=" w-[160px] xs:w-[250px] hover:bg-slate-200 transition-colors p-3 xs:p-4 text-primary bg-secondary rounded-full">Download App</button>
+        <button class="w-[160px] xs:w-[250px] hover:bg-slate-200 transition-colors p-3 xs:p-4 text-white  rounded-full border-2"><a href="#aboutUs">About App</a></button>
+        </div>
+    </div>
+</section>
+<!-- download App -->
+
+
+<!-- Testimonials -->
+<section id="testimonials" class=" w-full p-10 xs:p-0 flex mt-[30px] 2xl:justify-between 3xl:justify-center
+lg:justify-between sm:justify-between xs:justify-center gap-6 flex-wrap items-center">
+        <!-- img -->
+        <img class="sm:w-[300px] lg:w-[500px] bg-secondary xs:bg-transparent hidden xs:flex 3xl:bg-secondary 3xl:rounded-2xl " src="./img/What do you think.svg" alt="testimonials user img">
+        <!-- comment section -->
+        <div class="w-[500px] sm:w-[300px] md:w-[330px] lg:w-[500px] xl:w-[540px] 2xl:w-[700px] min-h-96 flex flex-col gap-5 justify-center">
+            <h1 class="sm:text-sm md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-[60px] text-[18px] xs:text-3xl font-semibold">What do you think?</h1>
+            <!-- Testimonial Wrapper -->
+                <section class="w-full flex justify-center gap-10 flex-col">
+                    <!-- Profile -->
+                    <div class="flex gap-5 items-center ">
+                        <div class="w-[75px] sm:w-[50px] md:w-[60px] lg:w-[75px] xl:w-[90px]  rounded-full">
+                            <img id="profileImg" class="w-full object-cover rounded-full " src="./img/Profile.jpg" alt="profile">
+                        </div>
+                        <div class=" flex gap-1 items-start flex-col">
+                            <h1 id="userName" class=" font-semibold md:text-sm lg:text-lg lg:text-xl 2xl:text-2xl"></h1>
+                            <p id="profession" class="sm:text-xs md:text-sm lg:text-base  lg:text-lg 2xl:text-2xl"></p>
+                        </div>
+                    </div>
+                    <!-- Testimonial Text -->
+                    <blockquote id="commentText" class="sm:text-sm md:text-lg lg:text-xl ">
+                    </blockquote>
+                </section>
+            <!-- Carousel Controls -->
+            <div class=" flex gap-5 justify-center xs:justify-start">
+        <button id="prevBtn" ><img class=" sm:w-[40px] md:w-[50px] lg:w-[60px] rounded-full hover:bg-secondary transition-colors" src="./icons/la_arrow-left.svg" alt="prevbtn"></button>
+        <button id="nextBtn" ><img  class="sm:w-[40px] md:w-[50px] lg:w-[60px] rounded-full hover:bg-secondary transition-colors" src="./icons/la_arrow-right.svg" alt="nextbtn"></button>
+            </div>
+        </div>
+</section>
+<!-- Testimonials -->
+
+<!-- footer -->
+ <footer class=" sm:justify-center  md:justify-between lg:justify-between  xl:justify-between 2xl:justify-between 3xl:justify-center  w-full p-10 gap-10 flex justify-around items-center flex-wrap">
+    <div class=" w-[300px] flex flex-col gap-5">
+        <div class=" flex items-center">
+            <img class="w-[70px]" src="./icons/Logo.svg">
+            <a class=font-semibold href="./index.html">Remind<span class="text-primary">me</span></a>
+        </div>
+        <p>Task deadlines and scheduling applications with various benefits and advantages</p>
+    </div>
+    <div class=" w-max items-center flex gap-20">
+        <ul class="flex flex-col gap-1">
+            <h1 class="mt-9 font-semibold">Sitemaps</h1>
+            <ul class="mt-10  flex flex-col gap-1">
+                <li class="list-disc text-primary"><a class="text-[#747474] hover:text-primary transition-colors" href="./index.html">Home</a></li>
+                <li class="list-disc text-primary"><a class="text-[#747474] hover:text-primary transition-colors" href="#features">Features</a></li>
+                <li class="list-disc text-primary"><a class="text-[#747474] hover:text-primary transition-colors" href="#aboutUs">About Us</a></li>
+            </ul>
+        </ul>
+        <ul class="flex flex-col gap-1">
+            <h1 class="mt-9 font-semibold">Advantages</h1>
+            <ul class="mt-10  flex flex-col gap-1">
+                <li class="list-disc text-primary"><a class="text-[#747474] hover:text-primary transition-colors" href="#features">Set Task Better</a></li>
+                <li class="list-disc text-primary"><a class="text-[#747474] hover:text-primary transition-colors" href="#download">Easy Manage</a></li>
+                <li class="list-disc text-primary"><a class="text-[#747474] hover:text-primary transition-colors" href="#notification">Get Notification</a></li>
+            </ul>
+        </ul>
+    </div>
+    <div class="w-[300px] flex gap-12 flex-col">
+        <h1 class="font-semibold">Follow Us</h1>
+        <div class="flex gap-5">
+            <a href="https://github.com/9riffegndi"><img src="./icons/uim_facebook-f.svg" alt="facebook"></a>
+            <a href="https://github.com/9riffegndi"><img src="./icons/uim_twitter.svg" alt="twitter"></a>
+            <a href="https://github.com/9riffegndi"><img src="./icons/uim_linkedin-alt.svg" alt="linkedin"></a>
+        </div>
+    </div>
+ </footer>
+<!-- footer -->
+ </body>
+<script src="script.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <!-- punyaku:Mohammad Arief Gunadi.-->
+
+
+
